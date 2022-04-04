@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20211221162938">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header " data-scroll-show>
+			<div class="header__container">
+				<a href="home.html" class="header__logo"><img src="img/logo.svg?_v=1640093378583" alt=""></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link" data-goto="page__about">О нас</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="page__catalog" data-goto-header>Каталог</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="page__materials" data-goto-header>Материалы</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="page__reviews">Отзывы</a></li>
+							<li class="menu__item"><a href="" class="menu__link" data-goto="page__contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__info">
+					<a class="header__info-phone" href="tel:+375259199290">+375259199290</a>
+					<div class="header__info-schedule">Пн-Вс 9:00-21:00</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__fullscreen fullscreen fullscreen__image-ibg">
+				<div class="fullscreen__container">
+					<div class="fullscreen__body">
+						<div class="fullscreen__content">
+							<div class="fullscreen__img"><picture><source srcset="img/fullscreen/sale.webp" type="image/webp"><img src="img/fullscreen/sale.png?_v=1640093378583" alt=""></picture></div>
+							<h1 class="fullscreen__title">Шкафы на заказ</h1>
+							<div class="fullscreen__text">По заявке с сайта скидка 10% каждому покупателю</div>
+							<div class="fullscreen__counter">
+								<div class="countdown-title">До конца скидки осталось:</div>
+								<div id="countdown" class="countdown">
+									<div class="countdown-number">
+										<span class="days countdown-time"></span>
+										<span class="countdown-text">Дни</span>
+									</div>
+									<div class="countdown-number">
+										<span class="hours countdown-time"></span>
+										<span class="countdown-text">Часы</span>
+									</div>
+									<div class="countdown-number">
+										<span class="minutes countdown-time"></span>
+										<span class="countdown-text">Мин</span>
+									</div>
+									<div class="countdown-number">
+										<span class="seconds countdown-time"></span>
+										<span class="countdown-text">Сек</span>
+									</div>
+								</div>
+							</div>
+							<form class="fullscreen__form form" action="#">
+								<div class="form__line">
+									<input class="input" autocomplete="off" type="tel" name="form[]" data-error data-required placeholder="Введите номер телефона">
+								</div>
+								<button type="submit" class="button">Получить скидку</button>
+							</form>
+
+						</div>
+						<div class="fullscreen__social">
+							<a href="#" class="fullscreen__social-viber _icon-viber"></a>
+							<a href="#" class="fullscreen__social-telegramm _icon-telegramm"></a>
+							<a href="#" class="fullscreen__social-whatsapp _icon-whatsapp"></a>
+						</div>
+					</div>
+					<div class="fullscreen__social-mobile">
+						<div class="fullscreen__social-mobile-social">
+							<a href="#" class="fullscreen__social-viber _icon-viber"></a>
+							<a href="#" class="fullscreen__social-telegramm _icon-telegramm"></a>
+							<a href="#" class="fullscreen__social-whatsapp _icon-whatsapp"></a>
+						</div>
+						<div class="fullscreen__social-mobile-info">
+							<a class="header__info-phone" href="tel:+375259199290">+375259199290</a>
+							<div class="header__info-schedule">Пн-Вс 9:00-21:00</div>
+						</div>
+					</div>
+				</div>
+				<picture><source srcset="img/fullscreen/bg.webp" type="image/webp"><img src="img/fullscreen/bg.jpg?_v=1640093378583" alt=""></picture>
+			</section>
+			<section class="page__test test">
+				<div class="test__container">
+					<div class="test__body">
+						<div class="test__img"><span></span><picture><source srcset="img/test/closet.webp" type="image/webp"><img src="img/test/closet.jpg?_v=1640093378583" alt="closet"></picture></div>
+						<div class="test__content">
+							<h2 class="test__title title">Узнайте стоимость мебели</h2>
+							<div class="test__text">Ответь на вопросы,получи скидку и бесплатный дизайн проект</div>
+							<button type="submit" class="button" data-popup="#test2">Пройти тест</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about" id="page__about" data-watch="navigator">
+				<div class="about__container">
+					<h2 class="about__title title">О нас</h2>
+					<div class="about__text">Мы рады видеть вас на нашем сайте, здесь представлены примеры наших работ и
+						мебель, которую мы можем изготовить, в том числе по вашим индивидуальным запросам.
+						Мы поможем сделать вашу квартиру, дом или офис более комфортным, функциональным и привлекательным. В
+						производстве мебели мы используем лучшие материалы и современное оборудование, чтобы создавать
+						по-настоящему красивую, удобную и качественную мебель.</div>
+				</div>
+			</section>
+			<section class="page__why why">
+				<div class="why__container">
+					<h2 class="why__title title">Почему более 14 лет клиенты выбирают нас:</h2>
+					<div class="why__items">
+						<div class="why__item">
+							<div class="why__item-img"><picture><source srcset="img/why/01.webp" type="image/webp"><img src="img/why/01.png?_v=1640093378583" alt=""></picture></div>
+							<div class="why__item-text">Рассрочки</div>
+						</div>
+						<div class="why__item">
+							<div class="why__item-img"><picture><source srcset="img/why/02.webp" type="image/webp"><img src="img/why/02.png?_v=1640093378583" alt=""></picture></div>
+							<div class="why__item-text">Заводские цены</div>
+						</div>
+						<div class="why__item">
+							<div class="why__item-img"><picture><source srcset="img/why/03.webp" type="image/webp"><img src="img/why/03.png?_v=1640093378583" alt=""></picture></div>
+							<div class="why__item-text">Оперативные сроки</div>
+						</div>
+						<div class="why__item">
+							<div class="why__item-img"><picture><source srcset="img/why/04.webp" type="image/webp"><img src="img/why/04.png?_v=1640093378583" alt=""></picture></div>
+							<div class="why__item-text">Акции, скидки, бонусы</div>
+						</div>
+						<div class="why__item">
+							<div class="why__item-img"><picture><source srcset="img/why/05.webp" type="image/webp"><img src="img/why/05.png?_v=1640093378583" alt=""></picture></div>
+							<div class="why__item-text">Европейское качество</div>
+						</div>
+						<div class="why__item">
+							<div class="why__item-img"><picture><source srcset="img/why/06.webp" type="image/webp"><img src="img/why/06.png?_v=1640093378583" alt=""></picture></div>
+							<div class="why__item-text">Бесплатная 3d визуализация</div>
+						</div>
+						<div class="why__item-block">Возможность рассрочки от нашей компании с 0% переплат!</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="page__catalog catalog" id="page__catalog" data-watch="navigator">
+				<div class="catalog__container">
+					<h2 class="catalog__title title">Каталог</h2>
+					<div class="catalog__items">
+						<a class="catalog__item __image-ibg" href="category.html">
+							<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.jpg?_v=1640093378583" alt="Cupboard"></picture>
+							<span>Шкаф-купе</span>
+							<p></p>
+						</a>
+						<a class="catalog__item __image-ibg" href="category.html">
+							<picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.jpg?_v=1640093378583" alt="Cupboard"></picture>
+							<span>Шкаф с распашными дверями</span>
+							<p></p>
+						</a>
+						<a class="catalog__item __image-ibg" href="category.html">
+							<picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.jpg?_v=1640093378583" alt="Cupboard"></picture>
+							<span>Кухни</span>
+							<p></p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__materials materials" id="page__materials" data-watch="navigator">
+				<div class="materials__container">
+					<h2 class="materials__title title">Современные материалы</h2>
+					<div class="materials__tabs">
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="submit" class="tabs__title _tab-active">Материалы</button>
+								<button type="submit" class="tabs__title">Фурнитура</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<div class="materials__slider">
+										<div class="materials__slider-controls">
+											<div class="materials__slider-arrow-left"><picture><source srcset="img/materials/arrow-left.webp" type="image/webp"><img src="img/materials/arrow-left.png?_v=1640093378583" alt=""></picture></div>
+											<div class="materials__slider-arrow-right"><picture><source srcset="img/materials/arrow-right.webp" type="image/webp"><img src="img/materials/arrow-right.png?_v=1640093378583" alt=""></picture></div>
+										</div>
+										<div class="materials__swiper">
+											<div class="materials__slide">
+												<div class="materials__slide-img"><picture><source srcset="img/materials/1.webp" type="image/webp"><img src="img/materials/1.jpg?_v=1640093378583" alt="materials"></picture>
+												</div>
+												<div class="materials__slide-title">Лдсп</div>
+											</div>
+											<div class="materials__slide">
+												<div class="materials__slide-img"><picture><source srcset="img/materials/2.webp" type="image/webp"><img src="img/materials/2.jpg?_v=1640093378583" alt="materials"></picture>
+												</div>
+												<div class="materials__slide-title">Стекло</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="materials__slider">
+										<div class="materials__slider-controls">
+											<div class="materials__slider-arrow-left"><picture><source srcset="img/materials/arrow-left.webp" type="image/webp"><img src="img/materials/arrow-left.png?_v=1640093378583" alt=""></picture></div>
+											<div class="materials__slider-arrow-right"><picture><source srcset="img/materials/arrow-right.webp" type="image/webp"><img src="img/materials/arrow-right.png?_v=1640093378583" alt=""></picture></div>
+										</div>
+										<div class="materials__swiper">
+											<div class="materials__slide">
+												<div class="materials__slide-img"><picture><source srcset="img/materials/1.webp" type="image/webp"><img src="img/materials/1.jpg?_v=1640093378583" alt="materials"></picture>
+												</div>
+												<div class="materials__slide-title">Фурнитура</div>
+											</div>
+											<div class="materials__slide">
+												<div class="materials__slide-img"><picture><source srcset="img/materials/2.webp" type="image/webp"><img src="img/materials/2.jpg?_v=1640093378583" alt="materials"></picture>
+												</div>
+												<div class="materials__slide-title">Фурнитура</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__special special">
+				<div class="special__container">
+					<h2 class="special__title title">Специальные предложения </h2>
+					<div class="special__items">
+						<a href="card.html" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/1.webp" type="image/webp"><img src="img/special/1.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">Шкаф Riviera/1</div>
+								<div class="card__text-price price">
+									<div class="price__current">1000p</div>
+									<div class="price__old"></div>
+									<div class="price__new"></div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">Хит продаж</div>
+						</a>
+						<a href="card.html" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/2.webp" type="image/webp"><img src="img/special/2.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">Шкаф Comfort/5</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old">1800p</div>
+									<div class="price__new">900p</div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">-50%</div>
+						</a>
+						<a href="card.html" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/3.webp" type="image/webp"><img src="img/special/3.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">шкаф WingLine</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old">1200p</div>
+									<div class="price__new">840p</div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">-30%</div>
+						</a>
+						<a href="card.html" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/4.webp" type="image/webp"><img src="img/special/4.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">Шкаф Riviera/5</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old"></div>
+									<div class="price__new"></div>
+									<div class="price__manths">24 мес</div>
+									<div class="price__installment">80p/мес</div>
+								</div>
+							</div>
+							<div class="card__lebel">Рассрочка</div>
+						</a>
+						<a href="card.html" data-da=".special__more-block, 767.98" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/5.webp" type="image/webp"><img src="img/special/5.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">Шкаф Comfort/3</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old">700p</div>
+									<div class="price__new">420p</div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">-40%</div>
+						</a>
+						<a href="card.html" data-da=".special__more-block, 767.98," class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/6.webp" type="image/webp"><img src="img/special/6.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">шкаф WingLine/8</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old">600p</div>
+									<div class="price__new">510p</div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">-15%</div>
+						</a>
+					</div>
+					<div class="special__more-link">Смотреть ещё</div>
+					<div class="special__more-block">
+						<a href="card.html" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/2.webp" type="image/webp"><img src="img/special/2.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">Шкаф Comfort/5</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old">1800p</div>
+									<div class="price__new">900p</div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">-50%</div>
+						</a>
+						<a href="card.html" class="special__item card">
+							<div class="card__img"><picture><source srcset="img/special/3.webp" type="image/webp"><img src="img/special/3.jpg?_v=1640093378583" alt=""></picture></div>
+							<div class="card__text">
+								<div class="card__text-name">шкаф WingLine</div>
+								<div class="card__text-price price">
+									<div class="price__current"></div>
+									<div class="price__old">1200p</div>
+									<div class="price__new">840p</div>
+									<div class="price__manths"></div>
+									<div class="price__installment"></div>
+								</div>
+							</div>
+							<div class="card__lebel">-30%</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__promotions promotions">
+				<div class="promotions__container">
+					<h2 class="promotions__title title">Акции</h2>
+					<div class="promotions__text">Узнай первым об акциях и скидках</div>
+					<form class="promotions__form form" action="#">
+						<div class="form__line">
+							<input class="input" autocomplete="off" type="text" name="form[]" data-error data-required placeholder="введите номер телефона или email">
+						</div>
+						<button type="submit" class="button">Подписаться</button>
+					</form>
+					<picture><source srcset="img/promotions/phone.webp" type="image/webp"><img src="img/promotions/phone.png?_v=1640093378583" alt=""></picture>
+				</div>
+			</section>
+			<section class="page__reviews reviews" id="page__reviews" data-watch="navigator">
+				<div class="reviews__container">
+					<h2 class="reviews__title title">Отзывы</h2>
+					<div class="reviews__controls">
+						<div class="reviews__slider">
+							<div class="reviews__slider-arrow-left"><picture><source srcset="img/reviews/left.webp" type="image/webp"><img src="img/reviews/left.png?_v=1640093378583" alt=""></picture></div>
+							<div class="reviews__slider-arrow-right"><picture><source srcset="img/reviews/right.webp" type="image/webp"><img src="img/reviews/right.png?_v=1640093378583" alt=""></picture></div>
+							<div class="reviews__swiper">
+								<div class="reviews__slide">
+									<div class="reviews__slide-name">@prlxlr13</div>
+									<div class="reviews__slide-text">Хочу выразить свою благодарность всему коллективу компании,
+										консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали
+										своей
+										работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда
+										радость
+										для хозяйки!</div>
+								</div>
+								<div class="reviews__slide">
+									<div class="reviews__slide-name">@prlxlr13</div>
+									<div class="reviews__slide-text">Хочу выразить свою благодарность всему коллективу компании,
+										консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали
+										своей
+										работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда
+										радость
+										для хозяйки!</div>
+								</div>
+								<div class="reviews__slide">
+									<div class="reviews__slide-name">@prlxlr13</div>
+									<div class="reviews__slide-text">Хочу выразить свою благодарность всему коллективу компании,
+										консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали
+										своей
+										работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда
+										радость
+										для хозяйки!</div>
+								</div>
+								<div class="reviews__slide">
+									<div class="reviews__slide-name">@prlxlr13</div>
+									<div class="reviews__slide-text">Хочу выразить свою благодарность всему коллективу компании,
+										консультанту, замерщику и монтажникам. Ребята, которые устанавливали кухню, порадовали
+										своей
+										работой, все чисто, аккуратно и быстро. Нареканий по кухне нет, новая кухня – всегда
+										радость
+										для хозяйки!</div>
+								</div>
+							</div>
+							<div class="reviews__dotts"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__production production">
+				<div class="production__container">
+					<h2 class="production__title title">Производство</h2>
+				</div>
+				<div class="production__body __image-ibg">
+					<ul class="production__list">
+						<li class="production__list_item"><span>1</span> Минимальный опыт работы наших монтажников — 10 лет
+						</li>
+						<li class="production__list_item"><span>2</span> Любые размеры, цвет, дизайн и фурнитура</li>
+						<li class="production__list_item"><span>3</span> Установка в удобные для Вас день и время</li>
+						<li class="production__list_item"><span>4</span> Сроки изготовления 5-15 дней</li>
+					</ul>
+					<picture><source srcset="img/production/bg.webp" type="image/webp"><img src="img/production/bg.jpg?_v=1640093378583" alt=""></picture>
+				</div>
+			</section>
+			<section class="page__working working">
+				<div class="working__container">
+					<h2 class="working__title title">Как мы работаем</h2>
+					<div class="working__items">
+						<div class="working__item">
+							<div class="working__item-img"><picture><source srcset="img/working/1.webp" type="image/webp"><img src="img/working/1.png?_v=1640093378583" alt=""></picture></div>
+							<div class="working__item-text">Заказать выезд дизайнера</div>
+							<span class="working__decor"><span></span></span>
+						</div>
+						<div class="working__item">
+							<div class="working__item-img"><picture><source srcset="img/working/2.webp" type="image/webp"><img src="img/working/2.png?_v=1640093378583" alt=""></picture></div>
+							<div class="working__item-text">Обмер</div>
+							<span class="working__decor"><span></span></span>
+						</div>
+						<div class="working__item">
+							<div class="working__item-img"><picture><source srcset="img/working/3.webp" type="image/webp"><img src="img/working/3.png?_v=1640093378583" alt=""></picture></div>
+							<div class="working__item-text">Оформление договора</div>
+							<span class="working__decor"><span></span></span>
+						</div>
+						<div class="working__item">
+							<div class="working__item-img"><picture><source srcset="img/working/4.webp" type="image/webp"><img src="img/working/4.png?_v=1640093378583" alt=""></picture></div>
+							<div class="working__item-text">Построение проекта</div>
+							<span class="working__decor"><span></span></span>
+						</div>
+						<div class="working__item">
+							<div class="working__item-img"><picture><source srcset="img/working/5.webp" type="image/webp"><img src="img/working/5.png?_v=1640093378583" alt=""></picture></div>
+							<div class="working__item-text">Производство</div>
+							<span class="working__decor"><span></span></span>
+						</div>
+						<div class="working__item">
+							<div class="working__item-img"><picture><source srcset="img/working/6.webp" type="image/webp"><img src="img/working/6.png?_v=1640093378583" alt=""></picture></div>
+							<div class="working__item-text">Установка</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__cost cost">
+				<div class="cost__img" data-da=".cost__text, 767.98"><picture><source srcset="img/cost/bg.webp" type="image/webp"><img src="img/cost/bg.jpg?_v=1640093378583" alt=""></picture></div>
+				<div class="cost__content">
+					<h2 class="cost__title title">Узнайте стоимость мебели</h2>
+					<div class="cost__text">Ответь на вопросы,получи скидку и бесплатный дизайн проект</div>
+					<a href="#" class="button" data-popup="#test2">Пройти тест</a>
+				</div>
+			</section>
+			<section class="page__contacts contacts" id="page__contacts" data-watch="navigator">
+				<div class="contacts__container">
+					<h2 class="contacts__title title">Контакты</h2>
+					<div class="contacts__body">
+						<div class="contacts__text">
+							<div class="contacts__text-item">
+								<span>Адрес офиса:</span>
+								<span>г.Минск ул П Бровки 45</span>
+							</div>
+							<div class="contacts__text-item">
+								<span>Номер телефона:</span>
+								<a href="tel:+375259199290">+375-25-919-92-90</a>
+							</div>
+							<div class="contacts__text-item">
+								<span>Email:</span>
+								<a href="mailto:info@gmail.com">info@gmail.com</a>
+							</div>
+							<div class="contacts__text-item">
+								<span>Режим работы:</span>
+								<span>пн-вс 9:00-21:00</span>
+							</div>
+							<div class="contacts__social">
+								<a class="_icon-viber" href="#"></a>
+								<a class="_icon-telegramm" href="#"></a>
+								<a class="_icon-whatsapp" href="#"></a>
+							</div>
+						</div>
+						<div class="contacts__form form __image-ibg">
+							<form class="form" action="#">
+								<div class="contacts__form-title">Заказать консультацию</div>
+								<div class="form__line">
+									<input autocomplete="off" type="tel" name="form[]" data-error="" data-required placeholder="Номер телефона" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="email" name="form[]" data-error="" placeholder="Email" data-required="email" class="input">
+								</div>
+								<div class="form__line">
+									<textarea autocomplete="off" name="form[]" placeholder="Комментарии" data-error="Ошибка" class="input"></textarea>
+								</div>
+								<button type="submit" class="button">Заказать</button>
+							</form>
+							<picture><source srcset="img/contacts/bg.webp" type="image/webp"><img src="img/contacts/bg.jpg?_v=1640093378583" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__left">
+						<a href="#" class="footer__logo">MADESHKAF</a>
+					</div>
+					<nav class="footer__menu">
+						<ul class="footer__menu-list">
+							<li class="footer__menu-item"><a href="" class="footer__menu-link" data-goto="page__about">О нас</a></li>
+							<li class="footer__menu-item"><a href="" class="footer__menu-link" data-goto="page__catalog" data-goto-header>Каталог</a></li>
+							<li class="footer__menu-item"><a href="" class="footer__menu-link" data-goto="page__materials" data-goto-header>Материалы</a></li>
+							<li class="footer__menu-item"><a href="" class="footer__menu-link" data-goto="page__reviews">Отзывы</a></li>
+							<li class="footer__menu-item"><a href="" class="footer__menu-link" data-goto="page__contacts">Контакты</a></li>
+						</ul>
+					</nav>
+					<iframe data-da=".footer__left, 991.98" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.2891452523386!2d27.60401821590706!3d53.90883764013002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbce532a614051%3A0x5c7637fc18c94b04!2z0YPQuy4g0J_QtdGC0YDRg9GB0Y8g0JHRgNC-0LLQutC4IDQ1LCDQnNC40L3RgdC6LCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2snl!4v1639656219607!5m2!1sru!2snl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="test2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<section class="test">
+					<div class="test__container">
+
+						<form action="#">
+
+							<div class="step step-1 active">
+								<h2 class="test__title-popup">Какой тип шкафа вам нужен?</h2>
+								<div class="test__options options">
+									<div class="options__item">
+										<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_1" class="options__label">
+											<div class="options__item-img"><picture><source srcset="img/popup-test/1.webp" type="image/webp"><img src="img/popup-test/1.jpg?_v=1640093378583" alt=""></picture></div>
+											<div class="options__item-text">Корпусный шкаф</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options__label">
+											<div class="options__item-img"><picture><source srcset="img/popup-test/2.webp" type="image/webp"><img src="img/popup-test/2.jpg?_v=1640093378583" alt=""></picture></div>
+											<div class="options__item-text">Встроенный шкаф</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_3" class="options__input" type="radio" value="3" name="option">
+										<label for="o_3" class="options__label">
+											<div class="options__item-img"><picture><source srcset="img/popup-test/3.webp" type="image/webp"><img src="img/popup-test/3.jpg?_v=1640093378583" alt=""></picture></div>
+											<div class="options__item-text">Угловой шкаф</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_4" class="options__input" type="radio" value="4" name="option">
+										<label for="o_4" class="options__label">
+											<div class="options__item-img"><picture><source srcset="img/popup-test/4.webp" type="image/webp"><img src="img/popup-test/4.jpg?_v=1640093378583" alt=""></picture></div>
+											<div class="options__item-text">Нужен совет мастера</div>
+										</label>
+									</div>
+								</div>
+								<div class="test__footer">
+									<div class="test__footer-text"><span>Ваша скидка: 0р</span><button data-close type="button" class="popup__close button">Закрыть</button></div>
+									<div class="test__footer-buttons">
+										<button type="button" class="next-btn button">Далее</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="step step-2">
+								<h2 class="test__title-popup">Знаете ли вы размеры желаемого шкафа-купе?</h2>
+								<div class="test__inner">
+									<div class="test__image"><picture><source srcset="img/popup-test/5.webp" type="image/webp"><img src="img/popup-test/5.jpg?_v=1640093378583" alt=""></picture></div>
+									<div class="test__options options">
+										<div class="options__item2">
+											<input hidden id="o2_1" class="options__input" checked type="radio" value="1" name="option2">
+											<label for="o2_1" class="options__label">
+												<div class="options__item-text">Знаю,могу сообщить</div>
+											</label>
+										</div>
+										<div class="options__item2">
+											<input hidden id="o2_2" class="options__input" type="radio" value="2" name="option2">
+											<label for="o2_2" class="options__label">
+												<div class="options__item-text">Знаю,могу прислать эскизы с размерами</div>
+											</label>
+										</div>
+										<div class="options__item2">
+											<input hidden id="o2_3" class="options__input" type="radio" value="3" name="option2">
+											<label for="o2_3" class="options__label">
+												<div class="options__item-text">Не знаю, нужно сделать замеры</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="test__footer">
+									<div class="test__footer-text"><span>Ваша скидка: 15р</span><button data-close type="button" class="popup__close button">Закрыть</button></div>
+									<div class="test__footer-buttons">
+
+										<button type="button" class="previous-btn button">Назад</button>
+										<button type="button" class="next-btn button">Далее</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="step step-3">
+								<h2 class="test__title-popup">Сколько отделений хотите в шкафу?
+								</h2>
+								<div class="test__inner">
+									<div class="test__image"><picture><source srcset="img/popup-test/6.webp" type="image/webp"><img src="img/popup-test/6.jpg?_v=1640093378583" alt=""></picture></div>
+									<div class="test__options options">
+										<div class="options__item2">
+											<input hidden id="o3_1" class="options__input" checked type="radio" value="1" name="option3">
+											<label for="o3_1" class="options__label">
+												<div class="options__item-text">1 отделение</div>
+											</label>
+										</div>
+										<div class="options__item2">
+											<input hidden id="o3_2" class="options__input" type="radio" value="2" name="option3">
+											<label for="o3_2" class="options__label">
+												<div class="options__item-text">2 отделения</div>
+											</label>
+										</div>
+										<div class="options__item2">
+											<input hidden id="o3_3" class="options__input" type="radio" value="3" name="option3">
+											<label for="o3_3" class="options__label">
+												<div class="options__item-text">3 отделения</div>
+											</label>
+										</div>
+										<div class="options__item2">
+											<input hidden id="o3_4" class="options__input" type="radio" value="4" name="option3">
+											<label for="o3_4" class="options__label">
+												<div class="options__item-text">4 отделения</div>
+											</label>
+										</div>
+										<div class="options__item2">
+											<input hidden id="o3_5" class="options__input" type="radio" value="5" name="option3">
+											<label for="o3_5" class="options__label">
+												<div class="options__item-text">Пока не знаю, нужна консультация</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="test__footer">
+									<div class="test__footer-text"><span>Ваша скидка: 30р</span><button data-close type="button" class="popup__close button">Закрыть</button></div>
+									<div class="test__footer-buttons">
+										<button type="button" class="previous-btn button">Назад</button>
+										<button type="button" class="button test-btn-submit">Далее</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="step step-4">
+								<div class="step-4__inner">
+									<div class="step-4__body">
+										<h2 class="step-4__title">Ваша <span>скидка </span>составляет: 30р</h2>
+										<div class="step-4__text">Введите ваш номер телефона, чтобы мы могли прислать вам
+											скидку и
+											3D дизайн-проект бесплатно. Если данных будет не достаточно, специалист свяжется с вами
+											для
+											уточнения.</div>
+										<input autocomplete="off" type="tel" name="form[]" data-error="" data-required placeholder="Введите номер телефона" class="input">
+										<button type="submit" class="submit-btn button">Получить скидку</button>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20211221162938"></script>
+</body>
+
+</html>
